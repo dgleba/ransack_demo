@@ -47,8 +47,8 @@ end
 10.times do
   user = FactoryGirl.create(:user, roles: [role[:admin]])
   3.times do
-    post = FactoryGirl.create(:post, user: user)
-    3.times { FactoryGirl.create(:comment, post: post) }
+    # post = FactoryGirl.create(:post, user: user)
+    # 3.times { FactoryGirl.create(:comment, post: post) }
   end
 end
 
